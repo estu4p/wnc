@@ -3,7 +3,7 @@ import Button from "./Button";
 
 const Hero = () => {
   return (
-    <section className="mb-40 max-container padding-container flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row">
+    <section className="mb-40 max-container padding-container flex flex-col gap-10 py-10 pb-32 md:gap-28 lg:py-10 xl:flex-row">
       {/* <div className="hero-map" /> */}
 
       {/* left */}
@@ -45,8 +45,10 @@ const Hero = () => {
       </div>
 
       {/* right */}
+
+      {/* Lokasi */}
       <div className="relative flex flex-1 items-start">
-        <div className="absolute z-20 rounded-3xl p-4 bg-green-90 -top-14 -left-3 sm:-top-16 sm:left-56 sm:py-4 md:px-7 md:py-8 lg:left-72 xl:-top-14 xl:-left-24 min-[1400px]:left-0 md:w-[268px]">
+        <div className="relative z-20 flex w-[268px] flex-col gap-8 rounded-3xl bg-green-90 px-7 py-8">
           <div className="flex flex-col">
             <div className="flexBetween">
               <p className="regular-16 text-gray-20">Lokasi</p>
@@ -62,41 +64,26 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="absolute -bottom-12 right-5 w-60 min-[470px]:w-64 sm:w-64 md:w-72 lg:w-[320px] sm:bottom-10 lg:right-44 lg:-bottom-16 xl:w-[350px] xl:right-32 xl:top-4">
-        <Image
-          src={"/images/img-hero.png"}
-          alt="img-hero"
-          width={350}
-          height={320}
-          className="bg-blue-300 border-4 border-black"
+      {/* <div className="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center">
+        <img
+          src={bigShoeImg}
+          alt="shoe colletion"
+          width={610}
+          height={502}
+          className="object-contain relative z-10"
         />
-      </div>
 
-      {/* <div className="relative flex flex-1 items-start">
-        <div className="absolute left-0 top-0 lg:-top-14 lg:-left-24 z-20 flex w-[268px] flex-col gap-8 rounded-3xl bg-green-90 px-7 py-8">
-          <div className="flex flex-col">
-            <div className="flexBetween">
-              <p className="regular-16 text-gray-20">Lokasi</p>
-              <Image
-                src="/icons/close.svg"
-                alt="close"
-                width={24}
-                height={24}
+        <div className="flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6">
+          {shoes.map((image, index) => (
+            <div key={index}>
+              <ShoeCard
+                index={index}
+                imgURL={image}
+                changeBigShoeImage={(shoe) => setBigShoeImg(shoe)}
+                bigShoeImg={bigShoeImg}
               />
             </div>
-            <p className="bold-20 text-white">Bantul, Yogyakarta</p>
-          </div>
-
-          <div className="flexBetween">
-            <div className="flex flex-col">
-              <p className="regular-16 block text-gray-20">Distance</p>
-              <p className="bold-20 text-white">173.28 mi</p>
-            </div>
-            <div className="flex flex-col">
-              <p className="regular-16 block text-gray-20">Elevation</p>
-              <p className="bold-20 text-white">2.040 km</p>
-            </div>
-          </div>
+          ))}
         </div>
       </div> */}
     </section>
