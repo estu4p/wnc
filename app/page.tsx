@@ -1,8 +1,16 @@
-import Hero from "@/components/Hero";
+import Hero from "@/sections/Hero";
+import Promo from "@/sections/Promo";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <Hero/>
+    <>
+      <section className="xl:padding-l wide:padding-r">
+        <Hero />
+      </section>
+      <section className="padding">
+        <Promo />
+      </section>
+    </>
   );
 }

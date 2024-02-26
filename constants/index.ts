@@ -7,12 +7,28 @@ export const NAV_LINKS = [
   { href: "/", key: "tentang", label: "Tentang" },
 ];
 
-// CAMP SECTION
-export const PEOPLE_URL = [
-  "/person-1.png",
-  "/person-2.png",
-  "/person-3.png",
-  "/person-4.png",
+// PROMO SECTION
+export const PROMO = [
+  {
+    imgUrl: "/images/promo1.jpg",
+    name: "DISC UPTO 25%",
+    desc: "Nikmati descount up to 25% dengan waktu terbatas",
+  },
+  {
+    imgUrl: "images/promo2.jpg",
+    name: "FREE DRINK",
+    desc: "Gratis minum ya...",
+  },
+  {
+    imgUrl: "images/promo3.jpg",
+    name: "Ini Diskon",
+    desc: "Ini adalah diskon ya gess yak, jadi tunggu apa lagi cuci sepatu anda sekarang ok ok okk",
+  },
+  {
+    imgUrl: "images/promo4.jpg",
+    name: "Back to School",
+    desc: "kok masih turun school, pochinok dong",
+  },
 ];
 
 // FEATURES SECTION

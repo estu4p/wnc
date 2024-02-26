@@ -3,6 +3,7 @@ module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./sections/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
@@ -30,6 +31,7 @@ module.exports = {
         },
       },
       backgroundImage: {
+        hero: "url('/images/collection-background.svg')",
         "bg-img-1": "url('/img-1.png')",
         "bg-img-2": "url('/img-2.png')",
         "feature-bg": "url('/feature-bg.png')",
